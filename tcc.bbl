@@ -1,0 +1,52 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[A. 2020]{artigo_principal}
+\abntrefinfo{A.}{A.}{2020}
+{A., L. H. W. Z.~B. A uhf/uwb hybrid rfid tag with a 51-m energy-harvesting
+  sensitivity for remote vital-sign monitoring.
+2020.}
+
+\bibitem[Baker 2010]{cmos_digital}
+\abntrefinfo{Baker}{BAKER}{2010}
+{BAKER, R.~J. \emph{CMOS Circuit Design, Layout, and Simulation}. 3th. ed. USA:
+  IEEE Press Editorial Board, 2010.
+ISBN 978-0-470-88132-3.}
+
+\bibitem[Dias e Cunha 2018]{site_wearebles}
+\abntrefinfo{Dias e Cunha}{DIAS; CUNHA}{2018}
+{DIAS, D.; CUNHA, J. P.~S. \emph{Wearable Health Devices—Vital Sign
+  Monitoring, Systems and Technologies}. 2018.
+Dispon{\'\i}vel em:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6111409/}.}
+
+\bibitem[Linhares 2021]{artigo_tag_unb}
+\abntrefinfo{Linhares}{LINHARES}{2021}
+{LINHARES, G. T. B.~I. de~Andrade Sousa; Vitor Guedes da Silva; Wellington
+  Avelino~do A. G.~C. Design of a passive uhf rfid tag for vital signs
+  measurement using uwb communication.
+Brasília, Brazil, 2021.}
+
+\bibitem[Murillo Belén Calvo~Lopez 2013]{livroprincipal}
+\abntrefinfo{Murillo Belén Calvo~Lopez}{MURILLO BELéN CALVO~LOPEZ}{2013}
+{MURILLO BELéN CALVO~LOPEZ, S. C.~P. C.~A. \emph{Voltage-to-Frequency
+  Converters CMOS Design and Implementation}. Acsp · analog circuits and
+  signal processing. New York: Springer, 2013.
+ISBN 978-1-4614-6236-1.}
+
+\bibitem[Razavi 2017]{cmos_analog}
+\abntrefinfo{Razavi}{RAZAVI}{2017}
+{RAZAVI, B. \emph{Design of Analog CMOS Integrated Circuits}. 2th. ed. New
+  York: McGraw-Hill Education, 2017.
+ISBN 978-0-07-252493-2.}
+
+\bibitem[Reis 2019]{site_top_down}
+\abntrefinfo{Reis}{REIS}{2019}
+{REIS, T. \emph{Top down: o que é e como funciona esse conceito?} 2019.
+Dispon{\'\i}vel em: \url{https://www.suno.com.br/artigos/top-down/}.}
+
+\end{thebibliography}

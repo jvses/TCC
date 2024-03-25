@@ -1,0 +1,18 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Ilustração da TAG RFID proposta para monitoramento remoto de sinais vitais. Fonte:\cite {artigo_principal} \relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de blocos dos módulos Top-Down em desenvolvimento\relax }}{23}{figure.caption.15}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Visão do \textit {Top Module} da \textit {Tag RFID} desenvolvida no projeto. Fonte:\cite {artigo_tag_unb} \relax }}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Diagrama de blocos VFC Multivibrador Fonte:\cite {livroprincipal} \relax }}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Esquemático VFC Multivibrador Fonte:\cite {livroprincipal} \relax }}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Formas de onda do Capacitor e Saída do VFC Multivibrador Fonte:\cite {livroprincipal} \relax }}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Esquemático circuito conversor tensão corrente. Fonte:\cite {artigo_principal} \relax }}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Integrador de corrente bidirecional com fonte e espelho de corrente. Fonte:\cite {livroprincipal} \relax }}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Esquemático do Integrador de Corrente Bidirecional Fonte:\cite {artigo_tag_unb} \relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Fonte:\cite {livroprincipal}\relax }}{31}{figure.caption.25}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Esquemático dos componentes do Circuito de controle acompanhados dos divisores de tensão para as tensões de Bias $V_H$ e $V_L$ Fonte:\cite {artigo_principal} \relax }}{31}{figure.caption.26}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Fonte:\cite {cmos_digital}\relax }}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Topologia Latch SR do tipo NAND Fonte:\cite {cmos_digital} \relax }}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Fonte:\cite {cmos_analog} \relax }}{33}{figure.caption.31}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Esquemático de topo com integração de todos os sub-circuitos do projeto \relax }}{35}{figure.caption.33}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Simulação da corrente de referência espelhada na Saída do VIC \relax }}{36}{figure.caption.34}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Sinais observados no Circuito de Controle \relax }}{37}{figure.caption.35}%

@@ -1,0 +1,45 @@
+\chapter[Introdução]{Introdução}
+\addcontentsline{toc}{chapter}{Introdução}
+
+%Este documento apresenta considerações gerais e preliminares relacionadas 
+%à redação de relatórios de Projeto de Graduação da Faculdade UnB Gama 
+%(FGA). São abordados os diferentes aspectos sobre a estrutura do trabalho, 
+%uso de programas de auxilio a edição, tiragem de cópias, encadernação, etc.
+
+\section{Contextualização}
+
+A preocupação e cuidados com a saúde sempre foram tópicos relevantes para a humanidade. Com a descoberta da eletricidade e estudo da biologia humana foram desenvolvidas tecnologias que unem ambas para prever, diagnosticar, tratar e monitorar o avanço de doenças. 
+
+A evolução dessas tecnologias chegou ao ponto da criação de dispositivos \textit{wearables}(vestíveis). Esses dispositivos são criados de forma a serem usados no corpo do usuário como uma roupa. É uma tecnologia emergente que permite o monitoramento de sinais vitais no dia-a-dia, durante o trabalho, na prática de esporte e etc.\cite{site_wearebles}
+
+Esse projeto visa o uso de monitoramento num ambiente hospitalar, onde será feita a captação do estado do paciente de forma mais confortável e constantemente sem precisar de contato físico. Isso é aplicável a pacientes que precisam de monitoramento constante e que estão em tratamento intensivo como UTI ou bebês em incubadoras.\cite{artigo_principal}
+
+Dadas as considerações esse projeto propõe o desenvolvimento de uma \textit{tag RFID}, que será usada como sensor \textit{wearable} acompanhando o estado do paciente constantemente o paciente e funcionando de forma remota. Dado que a alimentação e transmissão das informações são feitas de maneira \textit{wireless} por rádio frequência como descrito na Fig. 
+\ref{fig01}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figuras/rfid_tag.png}
+	\caption{Ilustração da TAG RFID proposta para monitoramento remoto de sinais vitais. Fonte:\cite{artigo_principal} }
+	\label{fig01}
+\end{figure}
+
+\section{Objetivos}
+
+ Para a execução do projeto será modelado o circuito de conversão tensão-frequência. Exibindo e explicando o funcionamento dos subsistemas que compõe esse circuito e a lógica aplicada nele começando pelas suas topologias e depois a simulação. Os blocos de subsistemas abordados são: conversor tensão corrente, integrador e sistema de controle.
+
+\section{Organização}
+
+Esse documento é organizado nas seguintes sessões:
+\begin{itemize}
+	\item \textbf{Sessão I Introdução}: Explicação das razões do projeto e contextualização
+	\item \textbf{Sessão II Metodologia}: apresentação das metodologias aplicadas no projeto
+	\item \textbf{Sessão III Conversor Tensão frequência}: exibição das topologias e explicação dos circuitos e blocos que compõe o conversor e como eles são relacionados.
+	\item \textbf{Sessão IV Simulações}: Simulações dos circuitos feitas com a ferramenta de desenvolvimento Cadence Virtuoso
+\end{itemize}
+
+
+
+
+%Este template é uma adaptação do ABNTeX2\footnote{\url{https://github.com/abntex/abntex2/}}.
