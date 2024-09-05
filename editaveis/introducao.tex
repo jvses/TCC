@@ -25,6 +25,37 @@ Dadas as considerações esse projeto propõe o desenvolvimento de uma \textit{t
 	\label{fig01}
 \end{figure}
 
+\subsection{Circuitos da \textit{TAG RFID}}
+
+Na Fig. \ref{fig02} está a visão em \textit{Top Modulo} da \textit{TAG RFID}. Ela é composta por esses cinco subcircuitos representados em blocos sendo eles: Retificador, LDO, Tensão de referência (Bandgap), Conversor tensão frequência e o transmissor \textit{UWB}.
+
+\subsubsection{Retificador}
+
+O retificador é o circito responsável por alimentar o sistema, em resumo é um sistema de alimentação por indução. Ele capta o sinal de alimentação em rádio frequência e retifica tornando-o em DC para suprir a TAG com energia. 
+
+\subsubsection{Tensão de Referência}
+
+O circuito usado para tensão de referência foi o Bandgap. Ele vai gerar uma tensão de referência estável e resistente à variação de temperatura para ser usado no LDO.
+
+\subsubsection{LDO}
+
+O LDO é um regulador de tensão que vai ajustar uma voltagem menor para alimentar os outros subcircuitos que são o conversor tensão frequência e o transmissor \textit{UWB}.
+
+\subsubsection{Conversor Tensão-Frequência}
+
+Este componente é o objeto de discução dessa tese. Ele converte os sinais elétricos recebidos na tensão de entrada, que não é a alimentação, e converte num sinal de onda quadrada com a frequência equivalente à tensão de entrada.
+
+\subsubsection{Transmissor \textit{UWB}}
+
+Ele recebe o sinal produzido pelo conversor tensão frequência e o transmite o sinal que pode ser interceptado por outro equipamento.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figuras/Top.jpg}
+	\caption{Visão do \textit{Top Module} da \textit{Tag RFID} desenvolvida no projeto. Fonte:\cite{artigo_tag_unb} }
+	\label{fig02}
+\end{figure}
+
 \section{Objetivos}
 
  Para a execução do projeto será modelado o circuito de conversão tensão-frequência. Exibindo e explicando o funcionamento dos subsistemas que compõe esse circuito e a lógica aplicada nele começando pelas suas topologias e depois a simulação. Os blocos de subsistemas abordados são: conversor tensão corrente, integrador e sistema de controle.

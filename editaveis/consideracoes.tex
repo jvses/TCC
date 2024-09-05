@@ -53,10 +53,85 @@ O conversor tensão corrente(VIC) é um bloco base para muitos designs de sinais
 A ideia descrita nos artigos \cite{artigo_principal} e \cite{artigo_tag_unb} em que o trabalho se baseia é que para a análise dos sinais vitais a tensão gerada pelos batimentos cardíacos é retificada e então é usada como a tensão de entrada $V_{in}$ do VFC. 
 
 \begin{figure}[htb]
+%\begin{center}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figuras/v-i.png}
+	\begin{circuitikz}[american,scale=0.8, transform shape]
+%Há comandos que podem te auxiliar na exibição do seu circuito
+\ctikzset{tripoles/mos style=arrows} % este coloca as pontas nos transistores
+%\ctikzset{transistors/arrow pos=end}
+%\ctikzflipxy{NAME} % Esse espelha o nome do componente que foi jirado nos eixos x e y
+%\ctikzflipx{NAME} % Esse espelha os nome só no eixo x
+%\ctikzflipy{NAME} % e esse só no eixo y
+\draw (1.7,-6.3) node[nmos, rotate=180, yscale=-1 ] (N1) {\rotatebox{0}{\ctikzflipx{N1}}};
+\draw (1.7,-8) node[nmos, rotate=180, yscale=-1 ] (N2) {\rotatebox{0}{\ctikzflipx{N2}}};
+\draw (1.7,-9.7) node[nmos, rotate=180, yscale=-1 ] (N3) {\rotatebox{0}{\ctikzflipx{N3}}};
+\draw (1.7,-11.3) node[nmos, rotate=180, yscale=-1 ] (N4) {\rotatebox{0}{\ctikzflipx{N4}}};
+\draw (14.7,-3.3) node[pmos, rotate=0] (P5) {P5};
+\draw (17.7,-3) node[pmos, rotate=180, yscale=-1 ] (P6) {\rotatebox{0}{\ctikzflipx{P6}}};
+
+\draw (7.3,-8.7) node[nmos, rotate=180, yscale=-1 ] (N5) {\rotatebox{0}{\ctikzflipx{N5}}};
+\draw (11.7,-8.7) node[nmos, rotate=0] (N6) {N6};
+\draw (14.7,-7.7) node[nmos, rotate=180, yscale=-1 ] (N7) {\rotatebox{0}{\ctikzflipx{N7}}};
+\draw (17.7,-7.7) node[nmos, rotate=0] (N8) {N8};
+\draw (1.7,-2.3) node[pmos, rotate=180, yscale=-1 ] (P1) {\rotatebox{0}{\ctikzflipx{P1}}};
+\draw (5,-4.7) node[pmos, rotate=0] (P2) {P2};
+\draw (7.3,-2) node[pmos, rotate=180, yscale=-1 ] (P4) {\rotatebox{0}{\ctikzflipx{P4}}};
+\draw (11.7,-2) node[pmos, rotate=0] (P3) {P3};
+
+%VCCs
+\draw (P1.S) -- (1.7,-1) node[vcc] {$V_{IN}$};
+\draw (P2.S) -- (5,-1) node[vcc] {$V_{IN}$};
+\draw (P3.S) -- (11.7,-1) node[vcc] {$V_{IN}$};
+\draw (P4.S) -- (7.3,-1) node[vcc] {$V_{IN}$};
+\draw (P5.S) -- (14.7,-1) node[vcc] {$V_{IN}$};
+
+\draw (P6.S) -- (17.7,-1) node[vcc] {$V_{CC}$};
+
+
+\draw  (P1.D) |-  (N1.D);
+\draw  (N1.S) |-  (N2.D);
+\draw  (N2.S) |-  (N3.D);
+\draw  (N3.S) |-  (N4.D);
+\draw  (N4.S) |- (1.7,-12) node[ground] {}; %(1.7,-16.2);
+\draw  (N1.D) ++(0,1) coordinate(N1D);
+\draw  (N1.G) |- (N1.D) node[circ] {};
+\draw  (N2.G) |- (N2.D) node[circ] {};
+\draw  (N3.G) |- (N3.D) node[circ] {};
+\draw  (N4.G) |- (N4.D) node[circ] {};
+\draw	 (N1D)  |- node[circ,midway] {} (P2.G);
+%N5-6 
+\draw  (N5.S) |- (7.3,-9.5) to[R=R] (7.3,-12) node[ground] {};
+\draw  (N5.G)  -|  (N6.G);
+\draw  (N6.S) |- (11.7,-12) node[ground] {};
+\draw  (N6.G) ++(-0.7,0) node[circ] {}  -- ++(0,1) node[circ] {} coordinate(N26) -| node[circ,midway] {} (N6.D);
+\draw  (P2.D) |- (N26);
+
+\draw (P4.G) ++(0.6,0) node[circ] {} -- ++(0,-1.3) coordinate(P14) -| node[circ] {} (P4.D);
+\draw (P1.G) -- ++(3,0) |- (P14);
+\draw (P5.G) -| node[circ] {} (P14);
+
+\draw (P6.G) |- (P6.D) node[circ] {};
+\draw (P6.G) -- ++(1.5,0) node[vcc,rotate=-90,label=south west:$V_{OUT}$] {};
+
+\draw  (N7.G) node[circ] {} |- (N7.D) node[circ] {};
+\draw  (N7.S) |- (14.7,-12) node[ground] {};
+\draw  (N7.G)  -|  (N8.G);
+\draw  (N8.S) |- (17.7,-12) node[ground] {};
+
+\draw  (P6.D) |-  (N8.D);
+\draw  (P5.D) |-  (N7.D);
+\draw  (P3.D) |-  (N6.D);
+\draw  (P4.D) |-  (N5.D);
+\draw  (P4.G)  -|  (P3.G);
+
+\draw[thick,dashed] (6,-8) rectangle (9,-12);
+
+	
+	\end{circuitikz}
+%	\includegraphics[width=0.8\textwidth]{figuras/v-i.png}
 	\caption{Esquemático circuito conversor tensão corrente. Fonte:\cite{artigo_principal} }
 	\label{fig07}
+%\end{center}
 \end{figure}
 
 A topologia do circuito VIC desse projeto está exibida na Fig. \ref{fig07}. Observa-se no esquemático uma variação de uma bootstrapped auto-bias current source, ou seja, fonte de correte auto enviesada. Nesse modelo a corrente, limitada pelo resistor, é espelhada de forma mútua entre os espelhos dos PMOS $P_3$ e $P_4$  e NMOS $N_5$ e $N_6$. 
@@ -95,7 +170,7 @@ $R$ & 200 $\Omega$ \\
 \label{tab:vic}
 \end{table}
 
- Á direita da fonte há um espelho, composto por $P_5$ e $N_7$, que direciona uma corrente que será espelhada novamente para uma relação, $P_6$ e $N_8$, cuja a tensão de alimentação não é mais a $V_{in}$, que é traduzida em corrente, mas sim a tensão $V_{DD}$ padrão de alimentação do resto do circuito. Essa tensão de saída é a tensão de Bias usada nos espelhos para o circuito integrador usado para criar o sinal de frequência.
+ Á direita da fonte há um espelho, composto por $N_7$ e $N_8$, que direciona uma corrente que será espelhada novamente para uma relação, $P_6$ e $N_8$, cuja a tensão de alimentação não é mais a $V_{in}$, que é traduzida em corrente, mas sim a tensão $V_{DD}$ padrão de alimentação do resto do circuito. Essa tensão de saída é a tensão de Bias usada nos espelhos para o circuito integrador usado para criar o sinal de frequência.
 
 Considerações devem ser feitas sobre esse circuito. O primeiro é sobre a faixa de corrente que ele vai abranger, que exerce influência direta nas frequências de saída. Além disso quanto maior essa faixa maior será a potência consumida. A potência máxima exigida no projeto pode afetar o desenvolvimento do projeto para se ajustar ao consumo total essas faixas podem ser revistas.
 
@@ -138,7 +213,120 @@ f = \frac{I}{C\cdot(V_H - V_L)}
 	\centering
 %Erro cometido nesse esquemático
 %Os inversores de P4 e P5 não são ligados no GND, mas sim no Vbias
-	\includegraphics[width=0.7\textwidth]{figuras/integrate.png}
+	%\includegraphics[width=0.7\textwidth]{figuras/integrate.png}
+	\begin{circuitikz}[american,scale=0.7, transform shape] 
+%Há comandos que podem te auxiliar na exibição do seu circuito
+\ctikzset{tripoles/mos style=arrows} % este coloca as pontas nos transistores
+%\ctikzset{transistors/arrow pos=end}
+%\ctikzflipxy{NAME} % Esse espelha o nome do componente que foi jirado nos eixos x e y
+%\ctikzflipx{NAME} % Esse espelha os nome só no eixo x
+%\ctikzflipy{NAME} % e esse só no eixo y
+\draw (16,-3.3) node[pmos, rotate=0] (P2) {P2};
+\draw (13.3,-3.3) node[pmos, rotate=0] (P1) {P1};
+\draw (18.7,-3.3) node[pmos, rotate=0] (P3) {P3};
+\draw (13.3,-7.3) node[pmos, rotate=0] (P4) {P4};
+\draw (11,-5.7) node[pmos, rotate=0] (P6) {P6};
+\draw (11,-9) node[nmos, rotate=0] (N5) {N5};
+\draw (18.7,-7.3) node[pmos, rotate=180, yscale=-1 ] (P5) {\rotatebox{0}{\ctikzflipx{P5}}};
+\draw (21,-5.7) node[pmos, rotate=180, yscale=-1 ] (P7) {\rotatebox{0}{\ctikzflipx{P7}}};
+\draw (21,-9) node[nmos, rotate=180, yscale=-1 ] (N6) {\rotatebox{0}{\ctikzflipx{N6}}};
+\draw (13.3,-14.3) node[nmos, rotate=180, yscale=-1 ] (N1) {\rotatebox{0}{\ctikzflipx{N1}}};
+\draw (18.7,-14.3) node[nmos, rotate=0] (N2) {N2};
+\draw (13.3,-17) node[nmos, rotate=180, yscale=-1 ] (N3) {\rotatebox{0}{\ctikzflipx{N3}}};
+\draw (18.7,-17) node[nmos, rotate=0] (N4) {N4};
+\draw (18.7,-18) node[ground] {} -| (N4.S);
+\draw (13.3,-18) node[ground] {} -| (N3.S);
+\draw (21.7,-15) node[ground] {};
+\draw (21.7,-13) to[C=C1] (21.7,-15);
+\draw (10.7,-15) node[pmos, rotate=0] (P9) {P9};
+\draw (10.7,-13) node[pmos, rotate=0] (P8) {P8};
+\draw (10.7,-17) node[pmos, rotate=0] (P10) {P10};
+\draw (10.7,-18) node[ground] {} node[circ] {};
+%\draw  (16,-1.3) |-  (P2.S);%(16,-2.3);
+\draw  (13.3,-5.7) to[short] (16,-5.7);
+%\draw  (13.3,-1.3) |-  (P1.S);%(13.3,-2.3);
+
+\draw  (9.3,-3.3) node[ocirc,label=$V_{in}$] {} -| (P1.G);%(12.3,-3.3);
+\draw[arrows = {-Stealth[scale width=1.5]}] (9.3,-3.3) node[ocirc] {} -- ++(0.8,0);
+
+\draw  (P2.G)  -|  (P3.G);
+%\draw  (18.7,-1.3) |-  (P3.S);%(18.7,-2.3);
+\draw  (P1.G)  -|  (P2.G);
+\draw  (P1.D) |- (13.3,-5.7);
+\draw  (16,-5.7) to[short] (18.7,-5.7);
+\draw  (P2.D) |- (16,-5.7);
+\draw (16,-5.7)node[circ] {} coordinate(O0);
+\draw  (P3.D) |- (18.7,-5.7);
+\draw  (13.3,-5.7) |-  (P4.S);%(13.3,-6.3);
+\draw (13.3,-5.7)node[circ] {} coordinate(O1);
+\draw  (11,-7.3) -|  (P4.G);%(12.3,-7.3);
+\draw  (P6.D) |- (11,-7.3);
+\draw  (11,-7.3) |-  (N5.D);%(11,-8);
+\draw (11,-7.3)node[circ] {} coordinate(O2);
+\draw  (P6.G)  |-  (N5.G);
+\draw  (18.7,-5.7) |-  (P5.S);%(18.7,-6.3);
+\draw (18.7,-5.7)node[circ] {} coordinate(O3);
+\draw  (P5.G)  -| (21,-7.3);
+\draw  (P7.D) |- (21,-7.3);
+\draw  (21,-7.3) |-  (N6.D);%(21,-8);
+\draw (21,-7.3)node[circ] {} coordinate(O4);
+\draw  (P7.G)  |-  (N6.G);
+\draw  (N1.G)  -|  (N2.G);
+\draw  (P4.D) |- (13.3,-12.7);
+\draw  (13.3,-12.7) |-  (N1.D);%(13.3,-13.3);
+\draw  (13.3,-12.7) to[short] (15.3,-12.7);
+\draw (13.3,-12.7)node[circ] {} coordinate(O5);
+\draw  (15.3,-12.7) to[short] (15.3,-17);
+\draw  (N2.S) |-  (N4.D);
+\draw  (N1.S) |-  (N3.D);
+\draw  (N3.G)  -| (15.3,-17);
+\draw  (15.3,-17) -|  (N4.G);%(17.7,-17);
+\draw (15.3,-17)node[circ] {} coordinate(O6);
+\draw  (P5.D) |- (18.7,-12.3);
+\draw  (18.7,-12.3) |-  (N2.D);%(18.7,-13.3);
+\draw  (18.7,-12.3) to[short] (21.7,-12.3);
+\draw (18.7,-12.3)node[circ] {} coordinate(O7);
+
+\draw (21.7,-12.3) -- ++(0.5,0) node[ocirc,label=right:$V_{CAP}$] {};
+
+\draw  (21.7,-12.3) to[short] (21.7,-13);
+\draw  (9.7,-14)  -| node[circ,midway] {} (P9.S);%(10.7,-14);
+\draw  (P8.G)  |- (9.7,-14) coordinate(P89);
+\draw  (P9.G)  |- (9.7,-16) coordinate(P910);
+\draw  (9.7,-16) -|  (P9.D);%(10.7,-16);
+\draw  (P10.G)  |-  (9.7,-18);
+\draw  (9.7,-18) -|  (P10.D);%(10.7,-18);
+\draw  (N5.S) |-  (N5.S);
+\draw  (P6.S) |-  (P6.S);
+\draw  (P7.S) |-  (P7.S);
+\draw  (N6.S) |-  (N6.S);
+\draw  (P8.S) |-  (P8.S);
+\draw  (16,-1.3) to[short] (16,-1.3);
+\draw  (13.3,-1.3) to[short] (13.3,-1.3);
+\draw  (9.3,-3.3) to[short] (9.3,-3.3);
+\draw  (18.7,-1.3) to[short] (18.7,-1.3);
+\draw  (P9.S)  -|  (P8.D);
+\draw  (P910)  -| node[circ,midway] {} (P10.S);
+\draw  (P9.G)  -- ++(-0.5,0) node[ocirc,label=$V_{bias}$] {};
+\draw  (N2.G) -- ++(-1.7,0) -- ++(0,0.5) node[ocirc,label=$V_{bias}$] {};
+\draw  (N5.S) -- ++(0,-0.5)  node[ocirc,label=left:$V_{bias}$] {};
+\draw  (N6.S) -- ++(0,-0.5)  node[ocirc,label=left:$V_{bias}$] {};
+
+\draw[arrows = {Stealth[scale width=1.5]}-] (P6.G |- O2) node[circ] {} ++(-0.3,0) -- ++(-0.5,0) node[ocirc,label=below:NQ] {} -- (P6.G |- O2) ;
+
+\draw[arrows = {Stealth[scale width=1.5]}-] (P7.G |- O4) node[circ] {} ++(0.3,0) -- ++(0.5,0) node[ocirc,label=below:Q] {} -- (P7.G |- O4);
+
+\draw (P1.S) -- ++(0,0.5) node[vcc] {ADJ1};
+\draw (P2.S) -- ++(0,0.5) node[vcc] {ADJ2};
+\draw (P3.S) -- ++(0,0.5) node[vcc] {ADJ3};
+
+\draw (P8.S) -- ++(0,0.5) node[vcc] {VDD};
+\draw (P6.S) -- ++(0,0.5) node[vcc] {VDD};
+\draw (P7.S) -- ++(0,0.5) node[vcc] {VDD};
+
+
+\end{circuitikz}
+	
 	\caption{Esquemático do Integrador de Corrente Bidirecional Fonte:\cite{artigo_tag_unb} }
 	\label{fig09}
 \end{figure}
@@ -201,7 +389,65 @@ Em simulação o bloco do circuito foi feito como apresentado na Fig. \ref{fig12
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\textwidth]{figuras/controle.png}
+	%\includegraphics[width=0.9\textwidth]{figuras/controle.png}
+\begin{circuitikz}[american,scale=1, transform shape] 
+%Há comandos que podem te auxiliar na exibição do seu circuito
+\ctikzset{tripoles/mos style=arrows} % este coloca as pontas nos transistores
+%\ctikzset{transistors/arrow pos=end}
+%\ctikzflipxy{NAME} % Esse espelha o nome do componente que foi jirado nos eixos x e y
+%\ctikzflipx{NAME} % Esse espelha os nome só no eixo x
+%\ctikzflipy{NAME} % e esse só no eixo y
+
+\draw (7,6) node[pmos] (P1) {P1};
+\draw (7,4) node[pmos] (P2) {P2};
+\draw (7,2) node[pmos] (P3) {P3};
+
+\draw (10,6) node[pmos] (P4) {P4};
+\draw (10,4) node[pmos] (P5) {P5};
+\draw (10,2) node[pmos] (P6) {P6};
+
+\draw (P1.S) node[vcc] {VDD};
+\draw (P4.S) node[vcc] {VDD};
+
+\draw (P1.G) |- (P1.D);
+\draw (P2.G) |- (P2.D);
+\draw (P3.G) |- (P3.D);
+\draw (P1.D) -| (P2.S);
+\draw (P2.D) -| (P3.S);
+
+\draw (P4.G) |- (P4.D);
+\draw (P5.G) |- (P5.D);
+\draw (P6.G) |- (P6.D);
+\draw (P4.D) -| (P5.S);
+\draw (P5.D) -| (P6.S);
+
+\draw (P2.G) -- ++(-0.5,0) node[ocirc,label=left:$V_L$] {};
+\draw (P4.G) -- ++(-0.5,0) node[ocirc,label=left:$V_H$] {};
+
+\draw (P3.D) node[ground] {};
+\draw (P6.D) node[ground] {};
+
+\draw (0,6) node[op amp, noinv input up] (AH) {AH};
+\draw (0,2) node[op amp, noinv input up] (AL) {AL};
+\draw (3,4) node[flipflop SR] (SR) {Latch SR};
+
+\draw (AH.+) -- ++(-1,0) node[ocirc,label=left:$V_H$] {} coordinate(AHN);
+\draw (AL.-) -- ++(-1,0) node[ocirc,label=left:$V_L$] {} coordinate(ALI);
+
+\draw (AH.-) -- ++(-0.5,0) coordinate(aux) |- (AL.+);
+\draw (AHN |- SR) node[ocirc, label=left:$V_{CAP}$] {} -- (aux |- SR);
+
+\draw (AH.out) |- (SR.pin 1);
+\draw (AL.out) |- (SR.pin 3);
+
+\draw (AH.up) -- ++(0,0.5) node[vcc] {VDD};
+\draw (AL.up) -- ++(0,0.5) node[vcc] {VDD};
+
+\draw (AH.down) -- ++(0,-0.5) node[ground] {};
+\draw (AL.down) -- ++(0,-0.5) node[ground] {};
+
+
+\end{circuitikz}
 	\caption{Esquemático dos componentes do Circuito de controle acompanhados dos divisores de tensão para as tensões de Bias $V_H$ e $V_L$ Fonte:\cite{artigo_principal} }
 	\label{fig12}
 \end{figure}
@@ -251,7 +497,65 @@ O circuito do Latch SR montado a partir dos transistores MOS se encontra na Fig.
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.9\textwidth]{figuras/lach_sr_NAND.png}
+	%\includegraphics[width=0.9\textwidth]{figuras/lach_sr_NAND.png}
+\begin{circuitikz}[american,scale=0.8, transform shape] 
+%Há comandos que podem te auxiliar na exibição do seu circuito
+\ctikzset{tripoles/mos style=arrows} % este coloca as pontas nos transistores
+%\ctikzset{transistors/arrow pos=end}
+%\ctikzflipxy{NAME} % Esse espelha o nome do componente que foi jirado nos eixos x e y
+%\ctikzflipx{NAME} % Esse espelha os nome só no eixo x
+%\ctikzflipy{NAME} % e esse só no eixo y
+\draw (17,-6) node[pmos, rotate=180, yscale=-1 ] (P2) {\rotatebox{0}{\ctikzflipx{P2}}};
+\draw (13.3,-6) node[pmos, rotate=0] (P1) {P1};
+\draw (15.3,-9.3) node[nmos, rotate=0] (N1) {N1};
+\draw (15.3,-12) node[nmos, rotate=180, yscale=-1 ] (N2) {\rotatebox{0}{\ctikzflipx{N2}}};
+\draw (24,-6) node[pmos, rotate=180, yscale=-1 ] (P3) {\rotatebox{0}{\ctikzflipx{P3}}};
+\draw (20.3,-6) node[pmos, rotate=0] (P4) {P4};
+\draw (22.3,-9.3) node[nmos, rotate=0] (N3) {N3};
+
+\draw (22.3,-12) node[nmos, rotate=180, yscale=-1 ] (N4) {\rotatebox{0}{\ctikzflipx{N4}}};
+\draw  (P1.D) |- (15.3,-7);
+\draw  (15.3,-7) -|  (P2.D);%(17,-7);
+\draw  (15.3,-7) to[short] (15.3,-7.3);
+\draw (15.3,-7)node[circ] {} coordinate(O0);
+\draw  (N1.S) |-  (N2.D);
+\draw  (P1.S) -|  (P2.S);
+\draw  (12,-9.3) -|  (N1.G);%(14.3,-9.3);
+\draw  (12,-6) to[short] (12,-9.3);
+\draw  (12,-6) -|  (P1.G);%(12.3,-6);
+\draw  (N2.G)  -| (18.3,-12);
+\draw  (P2.G)  -| (18.3,-6);
+\draw  (18.3,-6) to[short] (18.3,-8.3);
+\draw  (15.3,-7.3) |-  (N1.D);%(15.3,-8.3);
+\draw  (18.3,-8.3) to[short] (18.3,-12);
+\draw  (15.3,-7.3) to[short] (19,-7.3);
+\draw (15.3,-7.3)node[circ] {} coordinate(O1);
+
+\draw  (18.3,-8.3) -- ++(2,0) -- ++(0,0.5) node[ocirc,label=north:$NQ$] {} -- ++(0,-0.5) -| node[circ] {}  (N3.D);%(22.3,-8.3);
+
+\draw (18.3,-8.3)node[circ] {} coordinate(O2);
+\draw  (P4.D) |- (22.3,-7);
+\draw  (22.3,-7) -|  (P3.D);%(24,-7);
+\draw  (22.3,-7) |-  (N3.D);%(22.3,-8.3);
+\draw (22.3,-7)node[circ] {} coordinate(O3);
+\draw  (N3.S) |-  (N4.D);
+\draw  (P4.S) -|  (P3.S);
+\draw  (19,-9.3) -|  (N3.G);%(21.3,-9.3);
+\draw  (19,-6) to[short] (19,-7.3);
+\draw  (19,-6) -|  (P4.G);%(19.3,-6);
+\draw  (N4.G)  -| (25.3,-12);
+\draw  (P3.G)  -| (25.3,-6);
+\draw  (25.3,-6) to[short] (25.3,-12);
+\draw  (19,-7.3) to[short] (19,-9.3);
+\draw (19,-7.3)node[circ] {} coordinate(O4);
+
+\draw  (O4) -- ++(-2,0) -- ++(0,-0.5) node[ocirc,label=below:$Q$] {} ;
+\draw  (12,-9.3) -- ++(0,-0.5) node[ocirc, label=right:$SET$] {};
+\draw (N2.S) -- (15.3,-13) node[ground] {};
+\draw (N4.S) -- (22.3,-13) node[ground] {};
+\draw (25.3,-12) -- ++ (0.5,0) node[ocirc,label=right:$RES$] {};
+
+\end{circuitikz}
 	\caption{Topologia Latch SR do tipo NAND Fonte:\cite{cmos_digital} }
 	\label{fig15}
 \end{figure}

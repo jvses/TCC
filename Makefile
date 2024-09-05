@@ -42,8 +42,8 @@ $(TARGET): $(MAIN_FILE) $(SOURCES) bibliografia.bib
 	$(BIBTEX) $(AUX_FILE)
 	$(LATEX) -interaction=nonstopmode $(MAIN_FILE) $(SOURCES)
 	$(LATEX) -interaction=nonstopmode $(MAIN_FILE) $(SOURCES)
-	$(DVIPS) $(DVI_FILE)
-	$(PS2PDF) $(PS_FILE)
+#	$(DVIPS) $(DVI_FILE)
+#	$(PS2PDF) $(PS_FILE)
 	@cp $(PDF_FILE) $(TARGET)
 
 clean:
