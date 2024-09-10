@@ -9,10 +9,12 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Integrador de corrente bidirecional com fonte e espelho de corrente. Fonte:\cite {livroprincipal} }}{31}{figure.caption.22}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Esquemático do Integrador de Corrente Bidirecional Fonte:\cite {artigo_tag_unb} }}{32}{figure.caption.23}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Fonte:\cite {livroprincipal}}}{33}{figure.caption.25}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Esquemático dos componentes do Circuito de controle acompanhados dos divisores de tensão para as tensões de Bias $V_H$ e $V_L$ Fonte:\cite {artigo_principal} }}{33}{figure.caption.26}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Esquemático do circuito de controle feito com transistores e acompanhados do espelho de corrente e dos divisores de tensão para as tensões de Bias $V_H$ e $V_L$ Fonte:\cite {artigo_principal}}}{33}{figure.caption.26}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Fonte:\cite {cmos_digital}}}{34}{figure.caption.28}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Topologia Latch SR do tipo NAND Fonte:\cite {cmos_digital} }}{34}{figure.caption.29}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Fonte:\cite {cmos_analog} }}{35}{figure.caption.31}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Esquemático de topo com integração de todos os sub-circuitos do projeto }}{37}{figure.caption.33}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Simulação da corrente de referência espelhada na Saída do VIC }}{38}{figure.caption.34}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Sinais observados no Circuito de Controle }}{39}{figure.caption.35}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Topologia Latch SR do tipo NAND Fonte:\cite {cmos_digital} }}{35}{figure.caption.29}%
+\contentsline {figure}{\numberline {14}{\ignorespaces AmpOp Fonte:\cite {cmos_analog}}}{35}{figure.caption.31}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Esquemático de topo com integração de todos os sub-circuitos do projeto }}{37}{figure.caption.32}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Simulação do Latch SR no Cadence }}{38}{figure.caption.33}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Simulação no Cadence do modelo de AmpOp usado no circuito de controle }}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Simulação da corrente de referência espelhada na Saída do VIC }}{39}{figure.caption.35}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Sinais observados no Circuito de Controle }}{40}{figure.caption.36}%

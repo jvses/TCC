@@ -1,7 +1,6 @@
 \babel@toc {brazil}{}\relax 
 \contentsline {table}{\numberline {1}{\ignorespaces Dimensões dos transistores e resistor do VIC}}{30}{table.caption.21}%
 \contentsline {table}{\numberline {2}{\ignorespaces Dimensões dos transistores e capacitor do Integrador bidirecional}}{32}{table.caption.24}%
-\contentsline {table}{\numberline {3}{\ignorespaces Dimensões dos transistores dos divisores de tensão para as tensões de Bias $V_H$ e $V_L$}}{33}{table.caption.27}%
+\contentsline {table}{\numberline {3}{\ignorespaces Dimensões dos transistores para o circuito de controle da Fig\ref {fig12}}}{34}{table.caption.27}%
 \contentsline {table}{\numberline {4}{\ignorespaces Dimensões dos transistores do Latch SR NAND}}{34}{table.caption.30}%
-\contentsline {table}{\numberline {5}{\ignorespaces Dimensões dos transistores do AmpOp de 2 estágios cascode}}{35}{table.caption.32}%
-\contentsline {table}{\numberline {6}{\ignorespaces Sugestão de cronograma}}{42}{table.caption.36}%
+\contentsline {table}{\numberline {5}{\ignorespaces Sugestão de cronograma}}{42}{table.caption.37}%

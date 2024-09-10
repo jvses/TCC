@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.4.16)  7 MAY 2024 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.29)  10 SEP 2024 08:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,10 +7,10 @@ acao.tex fixos/pacotes.tex fixos/comandos.tex fixos/setup.tex fixos/listasAutom
 aticas.tex fixos/indiceAutomatico.tex editaveis/informacoes.tex editaveis/errat
 a.tex editaveis/dedicatoria.tex editaveis/agradecimentos.tex editaveis/epigrafe
 .tex editaveis/resumo.tex editaveis/abstract.tex editaveis/abreviaturas.tex edi
-taveis/simbolos.tex editaveis/introducao.tex editaveis/aspectosgerais.tex edita
-veis/consideracoes.tex editaveis/textoepostexto.tex editaveis/elementosdotexto.
-tex editaveis/elementosdopostexto.tex editaveis/apendices.tex editaveis/anexos.
-tex
+taveis/simbolos.tex editaveis/1-introducao.tex editaveis/2-aspectosgerais.tex e
+ditaveis/3-consideracoes.tex editaveis/4-textoepostexto.tex editaveis/5-element
+osdotexto.tex editaveis/6-elementosdopostexto.tex editaveis/apendices.tex edita
+veis/anexos.tex
 (./tcc.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1184,6 +1184,12 @@ Writing index file tcc.idx
 
 LaTeX Warning: Label `fig16' multiply defined.
 
+
+LaTeX Warning: Label `fig17' multiply defined.
+
+
+LaTeX Warning: Label `fig18' multiply defined.
+
 )
 \openout1 = `tcc.aux'.
 
@@ -1412,8 +1418,8 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 ) [19] [20
 
 ])
-(./editaveis/introducao.tex
-<figuras/rfid_tag.png, id=298, 2082.78125pt x 1395.2125pt>
+(./editaveis/1-introducao.tex
+<figuras/rfid_tag.png, id=306, 2082.78125pt x 1395.2125pt>
 File: figuras/rfid_tag.png Graphic file (type png)
 <use figuras/rfid_tag.png>
 Package pdftex.def Info: figuras/rfid_tag.png  used on input line 23.
@@ -1426,7 +1432,7 @@ Underfull \vbox (badness 7944) has occurred while \output is active []
  [21
 
  <./figuras/rfid_tag.png>]
-<figuras/Top.jpg, id=311, 569.12625pt x 384.43625pt>
+<figuras/Top.jpg, id=320, 569.12625pt x 384.43625pt>
 File: figuras/Top.jpg Graphic file (type jpg)
 <use figuras/Top.jpg>
 Package pdftex.def Info: figuras/Top.jpg  used on input line 54.
@@ -1448,19 +1454,20 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
 (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [22])
-(./editaveis/aspectosgerais.tex [23{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm
--ts1.enc} <./figuras/Top.jpg>] [24
+(./editaveis/2-aspectosgerais.tex [23{/usr/share/texmf-dist/fonts/enc/dvips/lm/
+lm-ts1.enc} <./figuras/Top.jpg>] [24
 
 ]
-<figuras/diagrama.png, id=336, 713.66624pt x 211.79124pt>
+<figuras/diagrama.png, id=344, 713.66624pt x 211.79124pt>
 File: figuras/diagrama.png Graphic file (type png)
 <use figuras/diagrama.png>
 Package pdftex.def Info: figuras/diagrama.png  used on input line 15.
 (pdftex.def)             Requested size: 273.00278pt x 81.01796pt.
-) (./editaveis/consideracoes.tex [25 <./figuras/diagrama.png>] [26
+) (./editaveis/3-consideracoes.tex
+[25 <./figuras/diagrama.png>] [26
 
 ]
-<figuras/blocks_diagram_vf.png, id=350, 672.5125pt x 129.48375pt>
+<figuras/blocks_diagram_vf.png, id=358, 672.5125pt x 129.48375pt>
 File: figuras/blocks_diagram_vf.png Graphic file (type png)
 <use figuras/blocks_diagram_vf.png>
 Package pdftex.def Info: figuras/blocks_diagram_vf.png  used on input line 25.
@@ -1471,12 +1478,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--26
 LLO BE-LÈN
  []
 
-<figuras/sch_diagrama.png, id=355, 559.08875pt x 276.03125pt>
+<figuras/sch_diagrama.png, id=363, 559.08875pt x 276.03125pt>
 File: figuras/sch_diagrama.png Graphic file (type png)
 <use figuras/sch_diagrama.png>
 Package pdftex.def Info: figuras/sch_diagrama.png  used on input line 34.
 (pdftex.def)             Requested size: 273.00278pt x 134.78897pt.
-<figuras/formas_ondas.png, id=360, 536.0025pt x 379.4175pt>
+<figuras/formas_ondas.png, id=368, 536.0025pt x 379.4175pt>
 File: figuras/formas_ondas.png Graphic file (type png)
 <use figuras/formas_ondas.png>
 Package pdftex.def Info: figuras/formas_ondas.png  used on input line 41.
@@ -1486,7 +1493,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28 <./figuras/blocks_diagram_vf.png> <./figuras/sch_diagrama.png> <./figuras/
 formas_ondas.png>] [29]
-<figuras/integrador_sch.png, id=400, 549.05125pt x 437.635pt>
+<figuras/integrador_sch.png, id=408, 549.05125pt x 437.635pt>
 File: figuras/integrador_sch.png Graphic file (type png)
 <use figuras/integrador_sch.png>
 Package pdftex.def Info: figuras/integrador_sch.png  used on input line 187.
@@ -1501,59 +1508,68 @@ Underfull \hbox (badness 2376) in paragraph at lines 188--188
 Underfull \vbox (badness 4467) has occurred while \output is active []
 
  [31 <./figuras/integrador_sch.png>]
-<figuras/control_topology.png, id=423, 357.335pt x 223.83624pt>
+<figuras/control_topology.png, id=431, 357.335pt x 223.83624pt>
 File: figuras/control_topology.png Graphic file (type png)
 <use figuras/control_topology.png>
 Package pdftex.def Info: figuras/control_topology.png  used on input line 373.
 (pdftex.def)             Requested size: 222.9525pt x 139.65822pt.
-<figuras/controle_waves.jpg, id=424, 647.41875pt x 448.67625pt>
+<figuras/controle_waves.jpg, id=432, 647.41875pt x 448.67625pt>
 File: figuras/controle_waves.jpg Graphic file (type jpg)
 <use figuras/controle_waves.jpg>
 Package pdftex.def Info: figuras/controle_waves.jpg  used on input line 380.
 (pdftex.def)             Requested size: 222.9525pt x 154.51277pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 432.
  [32] [33 <./figuras/control_topology.png> <./figuras/controle_waves.jpg>]
-<figuras/lacthSR_NOR.png, id=449, 352.31625pt x 182.6825pt>
+<figuras/lacthSR_NOR.png, id=457, 352.31625pt x 182.6825pt>
 File: figuras/lacthSR_NOR.png Graphic file (type png)
 <use figuras/lacthSR_NOR.png>
-Package pdftex.def Info: figuras/lacthSR_NOR.png  used on input line 482.
+Package pdftex.def Info: figuras/lacthSR_NOR.png  used on input line 658.
 (pdftex.def)             Requested size: 222.9525pt x 115.60347pt.
-<figuras/lachSR_NAND.png, id=450, 352.31625pt x 182.6825pt>
+<figuras/lachSR_NAND.png, id=458, 352.31625pt x 182.6825pt>
 File: figuras/lachSR_NAND.png Graphic file (type png)
 <use figuras/lachSR_NAND.png>
-Package pdftex.def Info: figuras/lachSR_NAND.png  used on input line 489.
+Package pdftex.def Info: figuras/lachSR_NAND.png  used on input line 665.
 (pdftex.def)             Requested size: 222.9525pt x 115.60347pt.
-<figuras/ampop.png, id=460, 1520.68124pt x 1082.54437pt>
-File: figuras/ampop.png Graphic file (type png)
-<use figuras/ampop.png>
-Package pdftex.def Info: figuras/ampop.png  used on input line 584.
-(pdftex.def)             Requested size: 409.49722pt x 291.51453pt.
- [34 <./figuras/lacthSR_NOR.png> <./figuras/lachSR_NAND.png>]) (./editaveis/tex
-toepostexto.tex [35 <./figuras/ampop.png>] [36
+ [34 <./figuras/lacthSR_NOR.png> <./figuras/lachSR_NAND.png>]
+Missing character: There is no ; in font nullfont!
+) (./editaveis/4-textoepostexto.tex [35] [36
 
 ]
-<figuras/top.png, id=483, 1303.11844pt x 655.69969pt>
-File: figuras/top.png Graphic file (type png)
-<use figuras/top.png>
-Package pdftex.def Info: figuras/top.png  used on input line 17.
-(pdftex.def)             Requested size: 409.49722pt x 206.04623pt.
- [37 <./figuras/top.png>]
-<figuras/sim_VIC.png, id=490, 963.6pt x 542.025pt>
+<figuras/imgs_jv/top.png, id=490, 721.19438pt x 596.98032pt>
+File: figuras/imgs_jv/top.png Graphic file (type png)
+<use figuras/imgs_jv/top.png>
+Package pdftex.def Info: figuras/imgs_jv/top.png  used on input line 17.
+(pdftex.def)             Requested size: 409.49722pt x 338.96149pt.
+<figuras/imgs_jv/sim_lach.jpg, id=491, 602.25pt x 451.6875pt>
+File: figuras/imgs_jv/sim_lach.jpg Graphic file (type jpg)
+<use figuras/imgs_jv/sim_lach.jpg>
+Package pdftex.def Info: figuras/imgs_jv/sim_lach.jpg  used on input line 26.
+(pdftex.def)             Requested size: 409.49722pt x 307.13654pt.
+ [37 <./figuras/imgs_jv/top.png>]
+<figuras/imgs_jv/sim_ampop.jpg, id=497, 602.25pt x 451.6875pt>
+File: figuras/imgs_jv/sim_ampop.jpg Graphic file (type jpg)
+<use figuras/imgs_jv/sim_ampop.jpg>
+Package pdftex.def Info: figuras/imgs_jv/sim_ampop.jpg  used on input line 36.
+(pdftex.def)             Requested size: 409.49722pt x 307.13654pt.
+<figuras/sim_VIC.png, id=499, 963.6pt x 542.025pt>
 File: figuras/sim_VIC.png Graphic file (type png)
 <use figuras/sim_VIC.png>
-Package pdftex.def Info: figuras/sim_VIC.png  used on input line 35.
+Package pdftex.def Info: figuras/sim_VIC.png  used on input line 58.
 (pdftex.def)             Requested size: 409.49722pt x 230.3369pt.
-<figuras/sim_controle.png, id=492, 963.6pt x 542.025pt>
+
+[38 <./figuras/imgs_jv/sim_lach.jpg>]
+Underfull \vbox (badness 3838) has occurred while \output is active []
+
+ [39 <./figuras/imgs_jv/sim_ampop.jpg> <./figuras/sim_VIC.png>]
+<figuras/sim_controle.png, id=510, 963.6pt x 542.025pt>
 File: figuras/sim_controle.png Graphic file (type png)
 <use figuras/sim_controle.png>
-Package pdftex.def Info: figuras/sim_controle.png  used on input line 48.
+Package pdftex.def Info: figuras/sim_controle.png  used on input line 71.
 (pdftex.def)             Requested size: 409.49722pt x 230.3369pt.
-) (./editaveis/elementosdotexto.tex [38 <./figuras/sim_VIC.png>]
-[39 <./figuras/sim_controle.png>] [40
+)
+(./editaveis/5-elementosdotexto.tex [40 <./figuras/sim_controle.png>] [41
 
-] [41])
-(./editaveis/elementosdopostexto.tex) (./tcc.bbl (./tcc.brf)
+])
+(./editaveis/6-elementosdopostexto.tex) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write6
 \openout6 = `tcc.brf'.
 
@@ -1585,33 +1601,32 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 6BB8FD59C9A295195E8E05DC82994642;1866.
+(rerunfilecheck)             Checksum: 9267A5173D4E0FAEF8153B79EFF63F9C;1866.
  ) 
 Here is how much of TeX's memory you used:
- 47882 strings out of 476056
- 1083859 string characters out of 5793066
- 1994187 words of memory out of 5000000
- 69118 multiletter control sequences out of 15000+600000
- 658279 words of font info for 104 fonts, out of 8000000 for 9000
+ 48967 strings out of 476056
+ 1114917 string characters out of 5793066
+ 2011187 words of memory out of 5000000
+ 70224 multiletter control sequences out of 15000+600000
+ 640485 words of font info for 89 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 104i,12n,110p,1544b,977s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-di
-st/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/l
-m/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1
-/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></u
-sr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts
-/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12
-.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-
-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public
-/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/
-share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts
-/type1/public/lm/lmsso12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy1
-0.pfb>
-Output written on tcc.pdf (45 pages, 2708066 bytes).
+ 104i,12n,110p,1976b,1027s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dis
+t/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm
+/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/
+share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/
+type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.
+pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-d
+ist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr
+/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts
+/type1/public/lm/lmsy8.pfb>
+Output written on tcc.pdf (45 pages, 2906159 bytes).
 PDF statistics:
- 761 PDF objects out of 1000 (max. 8388607)
- 633 compressed objects within 7 object streams
- 135 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 774 PDF objects out of 1000 (max. 8388607)
+ 646 compressed objects within 7 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 438 words of extra memory for PDF output out of 10000 (max. 10000000)
 
