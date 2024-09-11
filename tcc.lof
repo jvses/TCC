@@ -14,7 +14,7 @@
 \contentsline {figure}{\numberline {13}{\ignorespaces Topologia Latch SR do tipo NAND Fonte:\cite {cmos_digital} }}{35}{figure.caption.29}%
 \contentsline {figure}{\numberline {14}{\ignorespaces AmpOp Fonte:\cite {cmos_analog}}}{35}{figure.caption.31}%
 \contentsline {figure}{\numberline {15}{\ignorespaces Esquemático de topo com integração de todos os sub-circuitos do projeto }}{37}{figure.caption.32}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Simulação do Latch SR no Cadence }}{38}{figure.caption.33}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Simulação no Cadence do modelo de AmpOp usado no circuito de controle }}{39}{figure.caption.34}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Simulação da corrente de referência espelhada na Saída do VIC }}{39}{figure.caption.35}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Sinais observados no Circuito de Controle }}{40}{figure.caption.36}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Simulação da corrente de referência espelhada na Saída do VIC }}{38}{figure.caption.33}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Simulação do Latch SR no Cadence }}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Simulação no Cadence do modelo de AmpOp usado no circuito de controle }}{40}{figure.caption.35}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Sinais observados no Circuito de Controle }}{41}{figure.caption.36}%

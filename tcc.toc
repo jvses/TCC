@@ -32,14 +32,14 @@
 \contentsline {subsection}{\numberline {3.4.2}Amplificador operacional}{35}{subsection.3.4.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Simulação e Resultados}}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Latch SR}{38}{section.4.1}%
-\contentsline {section}{\numberline {4.2}AmpOp}{38}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Conversor tensão corrente}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.1}Conversor tensão corrente}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Latch SR}{38}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Amplificador operacional}{39}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Circuito de Controle}{39}{section.4.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Considerações Finais}}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusões}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Trabalhos futuros}{41}{section.5.2}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Considerações Finais}}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusões}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Trabalhos futuros}{43}{section.5.2}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{43}{section*.40}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{45}{section*.40}%
